@@ -9,15 +9,17 @@
 
 return array(
     '*' => array(
-    'omitScriptNameInUrls' => true,    
+    'omitScriptNameInUrls' => true,
     ),
-    
+
     'craft.dev' => array(
         'devMode' => true,
+        'siteUrl' => 'http://craft.dev/craftSandBox',
     ),
-    
+
     'environmentVariables' => array(
         'baseAssetUrl'  => '/assets',
         'baseAssetPath' => './assets',
     ),
+
 );
