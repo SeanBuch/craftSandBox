@@ -14,7 +14,7 @@ return array(
 
     'craft.dev' => array(
         'devMode' => true,
-        'siteUrl' => 'http://craft.dev/craftSandBox',
+        'siteUrl' => 'http://craft.dev/craft-sandbox',
     ),
 
     'environmentVariables' => array(

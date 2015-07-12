@@ -22,24 +22,13 @@
 {% block content %}
 
   <h1>{{ entry.title }}</h1>
-  <h2>{{ entry.title }}</h2>
-  <h3>{{ entry.title }}</h3>
 
 	{{ entry.body }}
 
 	<ul>
-		{% for entry in craft.entries.section('news').limit(10).find() %}
+		{% for entry in craft.entries.section('news').limit(3).find() %}
         <li><a href="{{ entry.url }}">{{ entry.title}}</a><p>{{ entry.body}}</p></li>
 		{% endfor %}
 	</ul>
-
-    {{ "Hello" }}
-
-    {{ entry.body }}
-
-    <ul>
-        <li>{{ entry.title }}</li>
-        <li>{{ entry.body }}</li>
-    </ul>
 
 {% endblock %}
